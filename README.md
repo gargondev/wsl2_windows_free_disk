@@ -9,8 +9,8 @@ de disco, ele não consegue diminuir sozinho (ou quase).
    *este exemplo é usando UBUNTU como exemplo, em caso de outra distro, o caminho final após Packages será diferente.*
 2. Abra o POWER SHELL de shutdown no WSL `wsl -- shutdown`, caso não funcione acesse esse endereço para [Shutdown WSL](https://askubuntu.com/questions/1131122/cant-restart-shutdown-ubuntu-under-wsl).
 3. Digite `diskpart`, abrira um outro terminal igual cmd do windows.
-4. Neste novo terminal digite `vdisk file="C:\Users\HeliézerGonçalves\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu20.04LTS_79rhkp1fndgsc\LocalState\ext4.vhdx"`
-5. attach vdisk readyonly
+4. Neste novo terminal digite `select vdisk file="C:\Users\HeliézerGonçalves\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu20.04LTS_79rhkp1fndgsc\LocalState\ext4.vhdx"`
+5. ATTACH VDISK READONLY
 6. compact vdisk
 7. detach vdisk
 
